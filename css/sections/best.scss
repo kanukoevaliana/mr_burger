@@ -1,0 +1,61 @@
+*{margin: 0;}
+.block{
+	color: $best;
+	.block-general
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@include tablets{
+			margin-right: rem(200px);
+		}
+	}
+	&__h1
+	{
+		margin-top: 5%;
+		font-family: Gagalin;
+		h2
+		{
+			font-size: rem(70px);
+		}
+		@include tablets
+		{
+			font-size: rem(60px);
+			margin-top: 14%;
+		}
+	}
+	&__tree{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__part{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 3%;
+			width: 25%;
+			@include tablets
+			{
+				width: 35%;
+				font-size: rem(15px);
+			}
+			.icons
+			{
+				width: 100%;
+			}
+			.p{
+				font-family: Lifehack;
+				width: 100%;
+			}
+			.f{
+				text-align: center;
+				width: 100%;
+				@include tablets
+				{
+					font-size: rem(13px);
+				}
+			}
+		}
+	}
+}
